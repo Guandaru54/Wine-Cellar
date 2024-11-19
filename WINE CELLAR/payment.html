@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucy's Wine Euphoria</title> 
+    <link rel="stylesheet" href="Style.css">                                                                                              
+    <script src="script.js" defer></script>  
+</head>
+<body>
+    <section id="payment">
+        <h2>Payment Details</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="payment-method">Mode of Payment:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="cash">Cash</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="visa">Visa</option>
+                <option value="mpesa">Mpesa</option>
+            </select>
+            <button type="button" onclick="placeOrder()">Place Order</button>
+        </form>
+    </section>   
+</body>
